@@ -17,11 +17,11 @@ from sqlalchemy import create_engine
 #API key connection to interact with youtube API
 api_service_name = "youtube"
 api_version = "v3"
-api_Key="AIzaSyCH-PxA2f0w9IXLf8enk_QFJvekp4dCYPY"
+api_Key="your api key"
 youtube = googleapiclient.discovery.build(api_service_name, api_version, developerKey=api_Key)
 
 #mycurser and engine created to intreact with MYSQL Database
-mydb = mysql.connector.connect(host="localhost",user="root",password="Thileeppan535")
+mydb = mysql.connector.connect(host="localhost",user="root",password="yourpassword")
 mycursor = mydb.cursor(buffered=True)
 engine = create_engine("mysql+mysqlconnector://root:@localhost/youtube")
 
